@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+# fail fast
+set -e
+
+# parse and derive params
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+cat $BUILD_DIR/Hostsfile >> /etc/hosts
